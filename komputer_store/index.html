@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <h1>Komputer Store</h1>
+    <div class="container">
+        <div class="row">
+
+            <div class="column">
+                <h2>Rich Banker</h2>
+                <p>Balance: <span id="balance"></span>,-</p>
+                <p> <span hidden id="loan"></span></p>
+                <button class="buttons" id="loan-button">Apply for Loan</button>
+            </div>
+
+            <div class="column">
+                <h2>Work</h2>
+                <p>Pay: <span id="pay"></span>,-</p>
+                <button class="buttons" id="bank-button">Bank</button>
+                <button class="buttons" id="work-button">Work</button>
+                <button class="buttons" hidden id="repayLoan-button">Repay Loan</button>
+            </div>
+
+            <div class="column">
+                <h2 id="laptop">Laptops</h2>
+                <select name="laptop-select" id="laptop-select"></select>
+                <p>
+                <h4>Features:</h4>
+                <ul id="features"></ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h2 id="laptopnavn">Intol Celeroon E10<span id="laptop-pris"> </span></h2>
+                <img id="image-computer" src="https://noroff-komputer-store-api.herokuapp.com/assets/images/1.png"
+                    alt="picture of laptop" width="200">
+                <button class="buttons" id="buy-button">Buy Now</button>
+                <p>Price: <span id="price"></span></p>
+                <p id="description"></p>
+            </div>
+        </div>
+        <div class="firework" id="firework" style="display: none;">Congratz!!</div>
+
+    </div>
+
+
+</body>
+
+</html>

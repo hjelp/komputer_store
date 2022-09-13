@@ -1,0 +1,177 @@
+h1 {
+    /*Content*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: whitesmoke;
+
+    /*Padding: Padding is used to create space around an element's 
+    content, inside of any defined borders.*/
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+
+    /*BORDER: style, width, and color of an element's border.*/
+    border-style: solid;
+    border-color: black;
+    border-width: 1rem;
+
+    /*Margins are used to create space around an element, 
+    outside of any defined borders. */
+    margin: auto;
+    margin-top: 0;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}       
+
+
+.column {
+    background-color: rgb(250, 250, 244);
+    width: 300px;
+    padding: 35px;
+    border: 10px;
+    border-color: white;
+    gap: 1.5rem;
+    border-style: solid;
+    border-radius: 30px;
+}
+
+
+img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.buttons{
+  text-align: center;
+  margin: 4px 2px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  border: 0px; 
+  border-radius: 10px;
+}
+
+#buy-button{
+  background-color: aqua;
+  width: 50%;
+  height: 10%;
+}
+#loan-button{
+  background-color: greenyellow;
+  width: 50%;
+  height: 25%;
+}
+
+#bank-button{
+  background-color: yellow;
+  width: 30%;
+  height: 25%;
+}
+
+#work-button{
+  background-color: blue;
+  color: white;
+  width: 30%;
+  height: 25%;
+}
+
+#repayLoan-button{
+  background-color: rgb(240, 70, 57);
+  width: 30%;
+  height: 25%;
+}
+
+.buttons:hover{
+  opacity: 0.75;
+}
+
+.buttons:active{
+  background-color: rgb(50, 50, 50) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* --------------- Just some FireworkStuff ---------------*/
+
+  @keyframes firework {
+    0% { 
+      transform: translate(-50%, 60vh);
+      width: 0.5vmin;
+      opacity: 1;
+    }
+    50% { 
+      width: 0.5vmin;
+      opacity: 1;
+    }
+    100% { 
+      width: 45vmin; 
+      opacity: 0; 
+    }
+  }
+  
+  .firework,
+  .firework::before,
+  .firework::after {
+    --top: 60vh;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5vmin;
+    aspect-ratio: 1;
+    background:
+      /* random backgrounds */
+      radial-gradient(circle, rgb(255, 0, 0) 0.2vmin, #0000 0) 50% 00%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.3vmin, #0000 0) 00% 50%,
+      radial-gradient(circle, rgb(0, 47, 255) 0.5vmin, #0000 0) 50% 99%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.2vmin, #0000 0) 99% 50%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.3vmin, #0000 0) 80% 90%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.5vmin, #0000 0) 95% 90%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.5vmin, #0000 0) 10% 60%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.2vmin, #0000 0) 31% 80%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.3vmin, #0000 0) 80% 10%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.2vmin, #0000 0) 90% 23%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.3vmin, #0000 0) 45% 20%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.5vmin, #0000 0) 13% 24%
+      ;
+    background-size: 0.5vmin 0.5vmin;
+    background-repeat: no-repeat;
+    animation: firework 2s infinite;
+  }
+  
+  .firework::before {
+    transform: translate(-50%, -50%) rotate(25deg) !important; 
+  }
+  
+  .firework::after {
+    transform: translate(-50%, -50%) rotate(-37deg) !important;
+  }
+
+  /*source: https://alvaromontoro.com/blog/68002/creating-a-firework-effect-with-css */
