@@ -73,26 +73,26 @@ img {
 #loan-button{
   background-color: greenyellow;
   width: 50%;
-  height: 25%;
+  height: 20%;
 }
 
 #bank-button{
   background-color: yellow;
   width: 30%;
-  height: 25%;
+  height: 20%;
 }
 
 #work-button{
   background-color: blue;
   color: white;
   width: 30%;
-  height: 25%;
+  height: 20%;
 }
 
 #repayLoan-button{
   background-color: rgb(240, 70, 57);
   width: 30%;
-  height: 25%;
+  height: 20%;
 }
 
 .buttons:hover{
